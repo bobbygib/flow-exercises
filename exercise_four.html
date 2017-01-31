@@ -36,12 +36,12 @@
         
         
         //Player Two
-        var score = 394;
-        var last_play = "W";
-        var broom = "none";
-        var has_ball = true;
-        var is_in_tree = true;
-        var crying = false;
+        // var score = 394;
+        // var last_play = "W";
+        // var broom = "none";
+        // var has_ball = true;
+        // var is_in_tree = true;
+        // var crying = false;
         
         
         //419.5
@@ -80,10 +80,10 @@
             score = score * 2;
         } else if (broom === "brush") {
             score = score * 3;
-        } else if (broom !== "handle" || broom != "brush") {
+        } else if (broom !== "handle" || broom != "brush" || broom === "none") {
             score = score / 2;
-        }
-        if (has_ball === true && is_in_tree === false && crying === false) {
+        } console.log(score)
+        if (has_ball == true && is_in_tree == false && crying !== true) {
             score = score * 1.5;
         } 
         
